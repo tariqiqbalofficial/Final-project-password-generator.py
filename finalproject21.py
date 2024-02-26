@@ -2,7 +2,6 @@ import streamlit as st
 import random
 import string
 
-st.title("Bano Qabil")
 def generate_password(length, use_uppercase, use_numbers, use_special):
     characters = string.ascii_lowercase
     if use_uppercase:
@@ -18,16 +17,23 @@ def generate_password(length, use_uppercase, use_numbers, use_special):
 def main():
     st.title("Password Generator")
 
-    length = st.slider("Select password length", 6, 30, 12)
+    # Sidebar with tabs
+    tab = st.sidebar.radio("Navigation", ["Generate Password", "About", "Settings"])
 
-    use_uppercase = st.checkbox("Include Uppercase Letters")
-    use_numbers = st.checkbox("Include Numbers")
-    use_special = st.checkbox("Include Special Characters")
+    if tab == "Generate Password":
+        length = st.slider("Select password length", 6, 30, 12)
+        use_uppercase = st.checkbox("Include Uppercase Letters")
+        use_numbers = st.checkbox("Include Numbers")
+        use_special = st.checkbox("Include Special Characters")
 
-    if st.button("Generate Password"):
-        password = generate_password(length, use_uppercase, use_numbers, use_special)
-        st.success("Your generated password is: ")
-        st.write(password)
+        if st.button("Generate Password"):
+            password = generate_password(length, use_uppercase, use_numbers, use_special)
+            st.success("Your generated password is: ")
+            st.write(password)
+    elif tab == "About":
+        st.markdown("This is a simple password generator app created using Streamlit.")
+    elif tab == "Settings":
+        st.write("Settings tab content goes here")
 
 if __name__ == "__main__":
     main()
