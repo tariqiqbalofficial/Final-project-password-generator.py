@@ -2,6 +2,7 @@ import streamlit as st
 import random
 import string
 
+st.title("Bano Qabil")
 def generate_password(length, use_uppercase, use_numbers, use_special):
     characters = string.ascii_lowercase
     if use_uppercase:
