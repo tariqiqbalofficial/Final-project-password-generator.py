@@ -28,5 +28,5 @@ def main():
         st.success("Your generated password is: ")
         st.write(password)
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
