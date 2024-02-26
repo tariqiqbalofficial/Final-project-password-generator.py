@@ -27,3 +27,6 @@ def main():
         password = generate_password(length, use_uppercase, use_numbers, use_special)
         st.success("Your generated password is: ")
         st.write(password)
+
+if _name_ == "_main_":
+    main()
