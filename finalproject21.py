@@ -18,9 +18,9 @@ def main():
     st.title("Password Generator")
 
     # Sidebar with tabs
-    tab = st.sidebar.radio("Slide Button", ["Home", "About us", "Contact us"])
+    tab = st.sidebar.radio("Navigation", ["Home", "About us", "Contact us"])
 
-    if tab == "Generate Password":
+    if tab == "Home":
         length = st.slider("Select password length", 6, 30, 12)
         use_uppercase = st.checkbox("Include Uppercase Letters")
         use_numbers = st.checkbox("Include Numbers")
@@ -30,10 +30,10 @@ def main():
             password = generate_password(length, use_uppercase, use_numbers, use_special)
             st.success("Your generated password is: ")
             st.write(password)
-    elif tab == "About":
+    elif tab == "About us":
         st.markdown("This is a simple password generator app created using Streamlit.")
-    elif tab == "Settings":
-        st.write("Settings tab content goes here")
+    elif tab == "Contact us":
+        st.write("Contact us tab content goes here")
 
 if __name__ == "__main__":
     main()
