@@ -18,7 +18,7 @@ def main():
     st.title("Password Generator")
 
     # Sidebar with tabs
-    tab = st.sidebar.radio("Navigation", ["Generate Password", "About", "Settings"])
+    tab = st.sidebar.radio("HOME", ["Generate Password", "CONTACT US", "ABOUT"])
 
     if tab == "Generate Password":
         length = st.slider("Select password length", 6, 30, 12)
