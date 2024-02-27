@@ -1,7 +1,7 @@
 import streamlit as st
 import random
 import string
-st.title("Bano Qabil")
+
 def generate_password(length, use_uppercase, use_numbers, use_special):
     characters = string.ascii_lowercase
     if use_uppercase:
@@ -15,7 +15,8 @@ def generate_password(length, use_uppercase, use_numbers, use_special):
     return password
 
 def main():
-    st.image("https://raw.githubusercontent.com/your_username/your_repository/main/st.Bano_Qabil.png", use_column_width=True)
+    st.image("https://images.app.goo.gl/r9ksRQpMkmEw6vY38", use_column_width=True)
+
     st.sidebar.title("Navigation")
     tab = st.sidebar.radio("", ["Home", "About us", "Contact us"])
 
