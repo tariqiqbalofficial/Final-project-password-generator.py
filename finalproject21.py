@@ -1,7 +1,7 @@
 import streamlit as st
 import random
 import string
-
+st.title("Bano Qabil")
 import streamlit as st
 
 # Display the image from GitHub
