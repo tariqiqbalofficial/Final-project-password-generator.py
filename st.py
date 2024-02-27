@@ -16,7 +16,7 @@ def generate_password(length, use_uppercase, use_numbers, use_special):
 
 def main():
     st.sidebar.image("https://images.app.goo.gl/s7FbDervZkpWYfSM7", use_column_width=True)
-
+def main()
     st.sidebar.title("Navigation")
     tab = st.sidebar.radio("", ["Home", "About us", "Contact us"])
 
