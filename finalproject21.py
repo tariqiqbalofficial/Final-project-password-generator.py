@@ -2,12 +2,14 @@ import streamlit as st
 import random
 import string
 
-# Display BANO QABIL logo
 import streamlit as st
 
 # Display the image from GitHub
-image_url = "https://raw.githubusercontent.com/your_username/st.Bano Qabil.png/master/path_to_your_image.png"
+image_url = "https://raw.githubusercontent.com/your_username/your_repository/main/st.Bano%20Qabil.png"
 st.image(image_url, caption="BANO QABIL Logo", use_column_width=True)
+
+# Other Streamlit code goes here...
+
 
 # Other Streamlit code goes here...
 
