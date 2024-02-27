@@ -34,10 +34,3 @@ def main():
             st.write(password)
     elif tab == "About us":
         st.title("About Us")
-        st.markdown("This is a simple password generator app created using Streamlit.")
-    elif tab == "Contact us":
-        st.title("Contact Us")
-        st.write("Contact us tab content goes here")
-
-if __name__ == "__main__":
-    main()
