@@ -6,7 +6,7 @@ import string
 import streamlit as st
 
 # Display the image from GitHub
-image_url = "https://raw.githubusercontent.com/your_username/your_repository/master/path_to_your_image.png"
+image_url = "https://raw.githubusercontent.com/your_username/st.Bano Qabil.png/master/path_to_your_image.png"
 st.image(image_url, caption="BANO QABIL Logo", use_column_width=True)
 
 # Other Streamlit code goes here...
