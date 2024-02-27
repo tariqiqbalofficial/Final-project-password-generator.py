@@ -15,7 +15,7 @@ def generate_password(length, use_uppercase, use_numbers, use_special):
     return password
 
 def main():
-    st.image("https://banoqabil.pk/media/logo.png/your_username/your_repository/main/st.Bano_Qabil.png", use_column_width=True)
+    st.image("https://banoqabil.pk", use_column_width=True)
 
     st.sidebar.title("Navigation")
     tab = st.sidebar.radio("", ["Home", "About us", "Contact us"])
