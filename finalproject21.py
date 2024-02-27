@@ -1,11 +1,7 @@
 import streamlit as st
 import random
 import string
-import streamlit as st
 
-import streamlit as st
-
-import streamlit as st
 import base64
 
 # Base64 encoded image
