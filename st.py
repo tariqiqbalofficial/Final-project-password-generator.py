@@ -2,14 +2,6 @@ import streamlit as st
 import random
 import string
 
-st.title("Bano Qabil")
-
-st.sidebar.markdown("""
-    <div style="display: flex; justify-content: center;">
-        <img src="https://banoqabil.pk/media/logo.png" width="200">
-    </div>
-""", unsafe_allow_html=True)
-
 def generate_password(length, use_uppercase, use_numbers, use_special):
     characters = string.ascii_lowercase
     if use_uppercase:
@@ -23,6 +15,8 @@ def generate_password(length, use_uppercase, use_numbers, use_special):
     return password
 
 def main():
+    st.image("https://raw.githubusercontent.com/your_username/your_repository/main/st.Bano_Qabil.png", use_column_width=True)
+
     st.sidebar.title("Navigation")
     tab = st.sidebar.radio("", ["Home", "About us", "Contact us"])
 
@@ -44,5 +38,5 @@ def main():
         st.title("Contact Us")
         st.write("Email: www.tariq0213@gmail.com")
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
