@@ -3,7 +3,14 @@ import random
 import string
 
 # Display BANO QABIL logo
-st.image("bano_qabil_logo.png", width=200)
+import streamlit as st
+
+# Display the image from GitHub
+image_url = "https://raw.githubusercontent.com/your_username/your_repository/master/path_to_your_image.png"
+st.image(image_url, caption="BANO QABIL Logo", use_column_width=True)
+
+# Other Streamlit code goes here...
+
 
 def generate_password(length, use_uppercase, use_numbers, use_special):
     characters = string.ascii_lowercase
