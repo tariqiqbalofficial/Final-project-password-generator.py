@@ -44,5 +44,5 @@ def main():
         st.title("Contact Us")
         st.write("Email: www.tariq0213@gmail.com")
 
-if _name_ == "main":
+if _name_ == "_main_":
     main()
