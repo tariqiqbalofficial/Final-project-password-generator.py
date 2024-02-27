@@ -2,32 +2,6 @@ import streamlit as st
 import random
 import string
 
-import base64
-
-
-import streamlit as st
-
-# Display the image from GitHub
-image_url = "https://raw.githubusercontent.com/your_username/your_repository/main/st.Bano_Qabil.png"
-st.image(image_url, caption="BANO QABIL Logo", use_column_width=True)
-
-# Other Streamlit code goes here...
-
-
-# Other Streamlit code goes here...
-
-
-# Other Streamlit code goes here...
-
-st.title("Bano Qabil")
-
-
-# Other Streamlit code goes here...
-
-
-# Other Streamlit code goes here...
-
-
 def generate_password(length, use_uppercase, use_numbers, use_special):
     characters = string.ascii_lowercase
     if use_uppercase:
@@ -57,10 +31,10 @@ def main():
             st.write(password)
     elif tab == "About us":
         st.title("About Us")
-        st.markdown("This is a simple password generator app created using Streamlit.")
+        st.markdown("Team Name: Pythonic Innovators\n\nTeam Members:\n\nTeam Leader: Tariq Iqbal\nMember: Abdul Raffey\nMember: Abdullah Khan\n\nProject Description:\nThe final project submit in Bano Qabil 2.0\nBy Python coding robust password generator developed using Python. The password generator aims to create strong and secure passwords that can be used across various platforms and services. This project is designed to enhance password security and encourage users to use complex, unique passwords for their accounts, thereby improving overall cybersecurity. The generator employs advanced algorithms to ensure the generated passwords are highly secure and difficult to crack, making it an essential tool for anyone concerned about online security.")
     elif tab == "Contact us":
         st.title("Contact Us")
-        st.write("Contact us tab content goes here")
+        st.write("Email: www.tariq0213@gmail.com")
 
 if __name__ == "__main__":
     main()
